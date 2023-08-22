@@ -1,0 +1,54 @@
+<body>
+    <link rel="stylesheet" href="/loginfororganisation.css">
+    <header>
+           <nav>
+             <a href="/home.html">Home</a>
+             <a href="/login.html">Login</a>
+             <a href="/signup.html">Signup</a>
+           </nav>
+         </header>
+       <footer>
+           <a href="#">Terms of Service</a>
+           <a href="#">Privacy Policy</a>
+           <a href="#">Contact Us</a>
+           <span>&copy; 2023 Volunteer Management System</span>
+         </footer>
+    organisation
+    <button type="button" onclick="createpost()">Create post</button>
+    <script>
+        function createpost(){
+            window.location.href = "/create.html";
+        }
+    </script>
+</body>
+<style>
+header {
+ background-color: #dd632e;
+ color: #fff;
+ padding: 10px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+footer {
+ background-color: #dd632e;
+ color: #fff;
+ text-align: center;
+ padding: 10px;
+ position: fixed;
+ bottom: 0;
+ width: 100%;
+}
+nav {
+ display: flex;
+ align-items: center;
+}
+nav a {
+ color: #fff;
+ text-decoration: none;
+ margin-left: 20px;
+}
+nav a:first-child {
+ margin-left: 0;
+}
+</style>

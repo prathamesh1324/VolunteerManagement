@@ -1,0 +1,139 @@
+
+<body>
+    <header>
+      <nav>
+        <a href="/home.html">Home</a>
+        <a href="/login.html">Login</a>
+        <a href="/signup.html">Signup</a>
+      </nav>
+    </header>
+    <div class="bg-image">
+      <div class="container">
+        <div class="login-form">
+          <h2>Login to Your Account</h2>
+          <form action="" method="post">
+            <label for="account-type">Choose Account Type:</label>
+            <select id="account-type">
+              <option value=""></option>
+              <option value="organisation">organisation</option>
+              <option value="volunteer">volunteer</option>
+            </select>
+            <label for="email">Email:</label>
+            <input type="text" id="username" name="username" required>
+          
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+  
+            <label for="password">leave this field empty</label>
+            <input type="password" id="password" name="password" required>
+          
+            <input type="submit" value="login" onclick=redirect()>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <a href="#">Terms of Service</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Contact Us</a>
+      <span>&copy; 2023 Your Simple Ecommerce Website</span>
+    </footer>
+    <script>
+      function redirect(){
+          
+          var select=document.getElementById("account-type");
+          var selectedValue=select.value;
+          
+          if(selectedValue == "organisation"){
+              
+              window.location.assign("/loginfororganisation.html");
+              
+              
+          } else if(selectedValue == "volunteer"){
+              window.location.assign("/loginforindividual.html");
+          }
+      }
+    </script>
+  </body>
+  <style>
+     .bg-image {
+        background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)),url(./bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+      }
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    background-color: #dd632e;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+  }
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+  }
+  nav a:first-child {
+    margin-left: 0;
+  }
+  .container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  footer {
+    background-color: #dd632e;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  .login-form {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f8f6f42a;
+  }
+  .login-form label,
+  .login-form input {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .login-form input[type="submit"] {
+    background-color: #dd632e;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  h2{
+    color: #fff;
+  }
+  label{
+    color: #fff;
+  }
+  select{
+    padding: 2px 37px;
+    margin: 10px;
+    cursor: pointer;;
+  }
+  </style>

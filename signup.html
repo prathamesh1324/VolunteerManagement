@@ -1,0 +1,53 @@
+<link rel="stylesheet" href="./login.css">
+<body>
+    <header>
+      <nav>
+        <a href="/home.html">Home</a>
+        <a href="/login.html">Login</a>
+        <a href="/signup.html">Signup</a>
+      </nav>
+    </header>
+    <div class="bg-image">
+      <div class="container">
+        <div class="login-form">
+          <h2>Login to Your Account</h2>
+          <form action="" method="post">
+            <label for="account-type">Choose Account Type:</label>
+            <select id="account-type">
+              <option value=""></option>
+              <option value="organisation">organisation</option>
+              <option value="volunteer">volunteer</option>
+            </select>
+            <label for="email">Email:</label>
+            <input type="text" id="username" name="username" required>
+          
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+  
+            <label for="password">leave this field empty</label>
+            <input type="password" id="password" name="password" required>
+          
+            <input type="submit" value="login" onclick=redirect()>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <a href="#">Terms of Service</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Contact Us</a>
+      <span>&copy; 2023 Your Simple Ecommerce Website</span>
+    </footer>
+    <script>
+      function redirect(){
+          var select = document.getElementById("account-type");
+          var selectedValue = select.value;
+          
+          if(selectedValue === "organisation"){
+              window.location.assign("/OrganisationSignup.html");
+          } else if(selectedValue === "volunteer"){
+              window.location.assign("/IndividualSignup.html");
+          }
+      }
+    </script>
+</body>

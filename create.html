@@ -1,0 +1,132 @@
+<body>
+    <header>
+      <nav>
+        <a href="/home.html">Home</a>
+        <a href="/login.html">Login</a>
+        <a href="/signup.html">Signup</a>
+      </nav>
+    </header>
+    <div class="bg-image">
+    <div class="container">
+      <div class="post-form">
+        <h2>Create New Post</h2>
+          <label for="event-name">Event Name:</label>
+          <input type="text" id="event-name" name="event-name" required>
+          
+          <label for="event-date">Event Date:</label>
+          <input type="date" id="event-date" name="event-date" required>
+
+          <label for="event-time">Event Time:</label>
+          <input type="datetime" id="event-time" name="event-time" required>
+
+          <label for="event-duration">Location of the Event:</label>
+          <input type="text" id="event-duration" name="event-duration" required>
+
+          <label for="event-location">Duration of  the Event:</label>
+          <input type="text" id="event-location" name="event-location" required>
+
+          <label for="no-of-volunteers">Number of volunteers:</label>
+          <input type="number" id="no-of-volunteers" name="no-of-volunteers" required>
+
+          <label for="manager-name">Manager Name:</label>
+          <input type="text" id="manager-name" name="manager-name" required>
+
+          <label for="contact-details">Contact details of manager:</label>
+          <input type="number" id="contact-details" name="contact-details" required>
+          
+          <label for="event-description">Description:</label>
+          <textarea id="event-description" name="event-description" rows="4" required></textarea>
+          
+          <label for="event-purpose">Purpose of the event:</label>
+          <textarea id="event-purpose" name="event-purpose" rows="2" required></textarea>
+
+          <input type="submit" value="Create Post">
+      </div>
+    </div>
+  </div>
+    <footer>
+      <a href="#">Terms of Service</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Contact Us</a>
+      <span>&copy; 2023 Volunteer Management System</span>
+    </footer>
+  </body>
+  <style>
+       .bg-image {
+      background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)),url(./bg.jpg);
+      background-repeat: repeat;
+      background-size: cover;
+      height: 150vh;
+    }
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    background-color: #dd632e;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+  }
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+  }
+  nav a:first-child {
+    margin-left: 0;
+  }
+  .container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  footer {
+  background-color: #dd632e;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+  footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  .post-form {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #f8f6f42a;
+}
+  .post-form label,
+  .post-form input,
+  .post-form textarea {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  .post-form input[type="submit"] {
+    background-color: #dd632e;
+    color: #555050;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  h2{
+  color: #fff;
+}
+label{
+  color: #fff;
+}
+  </style>
